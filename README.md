@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Introducción
 **Govench** es una aplicación web diseñada para promover y facilitar tanto la gestion registro de eventos. Con Govench, los usuarios pueden crear su cuenta, iniciar sesión, realizar y pagos. 
@@ -95,3 +96,6 @@ Este diagrama ilustra el esquema de la base de datos utilizada por la aplicació
 | service     | Declara la lógica de negocio y las operaciones que se realizarán sobre las entidades.         |
 | service impl| Implementa la lógica de negocio definida en los servicios, utilizando los repositorios necesarios. |
 
+=======
+# backend
+>>>>>>> 5b28d03cf894a9b32757eff1402ce3e97a7e294a
