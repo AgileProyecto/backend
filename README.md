@@ -1,12 +1,12 @@
 <<<<<<< HEAD
 
 # Introducción
-**Govench** es una aplicación web diseñada para promover y facilitar tanto la gestion registro de eventos. Con Govench, los usuarios pueden crear su cuenta, iniciar sesión, realizar y pagos. 
+**LinkByte** es una aplicación web diseñada para promover y facilitar tanto la gestion registro de eventos. Con LinkByte, los usuarios pueden crear su cuenta, iniciar sesión, realizar y pagos. 
 
 La aplicación permitirá crear, compartir y participar en eventos y comunidades relacionados al tema tegnológico. A su vez podremos visualizar dinámicamente los eventos registrados o creados y recibir notificaciones.
 
 
-Govench es una plataforma web vibrante y accesible que transforma la manera en que interactúas con el mundo de la tecnología. Te ofrece la capacidad de crear y gestionar eventos, mantener un calendario personalizado, y participar en comunidades apasionadas por la innovación. Con Govench, cada usuario puede visualizar eventos, recibir notificaciones en tiempo real, y obtener certificados a través de pagos seguros. Nuestro objetivo es proporcionar un espacio en el que tus intereses tecnológicos sean celebrados, facilitando el aprendizaje y la colaboración en una experiencia en línea enriquecedora y conectada.
+LinkByte es una plataforma web vibrante y accesible que transforma la manera en que interactúas con el mundo de la tecnología. Te ofrece la capacidad de crear y gestionar eventos, mantener un calendario personalizado, y participar en comunidades apasionadas por la innovación. Con LinkByte, cada usuario puede visualizar eventos, recibir notificaciones en tiempo real, y obtener certificados a través de pagos seguros. Nuestro objetivo es proporcionar un espacio en el que tus intereses tecnológicos sean celebrados, facilitando el aprendizaje y la colaboración en una experiencia en línea enriquecedora y conectada.
 
 
 ### Revisa el Progreso del Proyecto BookHub
@@ -21,7 +21,7 @@ Govench es una plataforma web vibrante y accesible que transforma la manera en q
 
 
 
-### Funcionalidades de la Aplicación Govench
+### Funcionalidades de la Aplicación LinkByte
 
 #### 1. **Módulo de Gestión de Eventos**
 

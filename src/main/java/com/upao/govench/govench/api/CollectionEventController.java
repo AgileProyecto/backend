@@ -1,6 +1,4 @@
 package com.upao.govench.govench.api;
-
-import com.upao.govench.govench.model.dto.EventResponseDTO;
 import com.upao.govench.govench.model.entity.CollectionEvent;
 import com.upao.govench.govench.model.entity.Event;
 import com.upao.govench.govench.service.CollectionEventService;

@@ -10,8 +10,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class GovenchApplication {
 
     public static void main(String[] args) {
-        System.setProperty("PAYPAL_CLIENT_ID", "Acu7Ifuu8njmFqnr0Jyu6cFUBR4jtSw-4NRqYJHPAxOqEw-ky_5G1l_vEStWDwlc6nAx_1A1dlTEmx_Z");
-        System.setProperty("PAYPAL_CLIENT_SECRET", "EIlCii_R_Albk9ktXSFfRQ6FRUtfjhiAq-VskUQzyS8y1RbKE4741_VvawMySppmjDL4diecaCRwbGlG");
+        System.setProperty("PAYPAL_CLIENT_ID", "AUiihcPL0NMt8XKbmxG3jeJh3-vOrU-X7uhCiOBcmhXK9zTmVi4DklCr772xFN9mkFvQ_88FYIVjmL3E");
+        System.setProperty("PAYPAL_CLIENT_SECRET", "EBxXcdwdC2R7qFuB0XdmqmFb5dIpDr4vJZLXXGb6v18ZZfhUsGh5ioz7f0_kGJC4r_4AKtcUiMIQocDg");
         SpringApplication.run(GovenchApplication.class, args);
     }
 
