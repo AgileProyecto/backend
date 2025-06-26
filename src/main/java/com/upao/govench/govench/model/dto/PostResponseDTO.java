@@ -1,12 +1,9 @@
 package com.upao.govench.govench.model.dto;
 
-import com.upao.govench.govench.model.entity.Community;
-import com.upao.govench.govench.model.entity.Participant;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.net.ssl.SSLSession;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 

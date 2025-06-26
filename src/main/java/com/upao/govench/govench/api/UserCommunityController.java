@@ -1,7 +1,6 @@
 package com.upao.govench.govench.api;
 
 import com.upao.govench.govench.mapper.CommunityMapper;
-import com.upao.govench.govench.model.dto.CommunityResponseDTO;
 import com.upao.govench.govench.model.dto.UserCommunityResponseDTO;
 import com.upao.govench.govench.model.entity.Community;
 import com.upao.govench.govench.model.entity.User;
@@ -12,14 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 import com.upao.govench.govench.model.entity.UserCommunity;
 import com.upao.govench.govench.model.entity.IdCompuestoU_C;
 import com.upao.govench.govench.service.UserCommunityService;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import java.time.LocalDate;
 import java.util.List;
 
 
@@ -75,7 +72,6 @@ public class UserCommunityController {
         }
 
         // Verificar si el rol del usuario es "ROLE_PARTICIPANT" o "ROLE_ORGANIZER"
-        String userRole = user.getRole().getName();
         if ( user.getOrganizer() == null && user.getParticipant() == null ) {
             return new ResponseEntity<>("Solo los participantes y organizadores pueden unirse a una comunidad", HttpStatus.FORBIDDEN);
         }
@@ -90,11 +86,6 @@ public class UserCommunityController {
         if (userCommunityService.searchUserCommunityById(new IdCompuestoU_C(iduser, idcommunity)) != null) {
             return new ResponseEntity<>("Ya estás registrado en esta comunidad", HttpStatus.CONFLICT);
         }
-
-        // Crear la nueva relación entre usuario y comunidad
-        UserCommunity createdUserCommunity = userCommunityService.addUserCommunity(
-                new UserCommunity(new IdCompuestoU_C(iduser, idcommunity), user, community, LocalDate.now())
-        );
 
         return new ResponseEntity<>("Inscripción en la comunidad exitosa", HttpStatus.CREATED);
     }

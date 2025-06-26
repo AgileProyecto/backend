@@ -1,6 +1,5 @@
 package com.upao.govench.govench.repository;
 
-import com.upao.govench.govench.model.dto.PostResponseDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

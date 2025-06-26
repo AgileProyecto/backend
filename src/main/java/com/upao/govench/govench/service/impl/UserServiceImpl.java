@@ -10,17 +10,11 @@ import com.upao.govench.govench.security.TokenProvider;
 import com.upao.govench.govench.security.UserPrincipal;
 import com.upao.govench.govench.service.UserService;
 import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
-import jakarta.persistence.Transient;
-import lombok.AllArgsConstructor;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -30,11 +24,8 @@ import org.webjars.NotFoundException;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
-import java.util.Optional;
-
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -78,7 +69,6 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private FollowRepository followRepository;
-    private EventRepository eventRepository;
 
 
     //Metodos seguridad //

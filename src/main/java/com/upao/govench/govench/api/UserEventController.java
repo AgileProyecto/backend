@@ -108,19 +108,6 @@ public class UserEventController{
                 String paymentUrl = handleEventPayment(idevent);
                 return new ResponseEntity<>(paymentUrl, HttpStatus.OK);
             }
-            // Crear la nueva relación entre usuario y evento
-            UserEvent createdUserEvent = userEventService.addUserEvent(
-                    new UserEvent(new IdCompuestoU_E(iduser, idevent), // ID compuesto
-                            user, // Usuario asociado
-                            event, // Evento asociado
-                            LocalDate.now(), // Fecha de registro
-                            false, // Notificaciones habilitadas (por defecto, false)
-                            null, // Fecha del último recordatorio enviado (inicialmente null)
-                            false, // Recordatorio del mismo día enviado (inicialmente false)
-                            false  // Recordatorio final enviado (inicialmente false))
-                    )
-            );
-
             return new ResponseEntity<>("Inscripción exitosa", HttpStatus.CREATED);
 
         } else {

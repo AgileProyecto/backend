@@ -9,7 +9,6 @@ import com.upao.govench.govench.model.entity.User;
 import com.upao.govench.govench.model.entity.UserEvent;
 import com.upao.govench.govench.repository.EventRepository;
 import com.upao.govench.govench.repository.UserEventRepository;
-import com.upao.govench.govench.repository.UserRepository;
 import com.upao.govench.govench.service.UserEventService;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,15 +16,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @Service
 public class UserEventServiceImpl implements UserEventService {
     @Autowired
     private UserEventRepository userEventRepository;
     private final EventMapper eventMapper;
-    @Autowired
-    private UserRepository userRepository;
     @Autowired
     private EventRepository eventRepository;
     @Autowired

@@ -2,7 +2,6 @@ package com.upao.govench.govench.mapper;
 
 import com.upao.govench.govench.model.dto.EventBasicDTO;
 import com.upao.govench.govench.model.dto.ReportResponseDTO;
-import com.upao.govench.govench.model.entity.Event;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

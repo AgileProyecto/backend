@@ -1,15 +1,11 @@
 package com.upao.govench.govench.api;
 
-import com.upao.govench.govench.model.entity.Participant;
 import com.upao.govench.govench.service.UserService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.AllArgsConstructor;
 import com.upao.govench.govench.service.UserEventService;
-import com.upao.govench.govench.model.dto.ReminderRequestDTO;
 import com.upao.govench.govench.model.entity.User;
-import com.upao.govench.govench.model.entity.Event;
 import com.upao.govench.govench.model.entity.UserEvent;
-import com.upao.govench.govench.service.NotificationService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -20,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/notifications")
 public class NotificationController {
 
-    private NotificationService notificationService;
     private final UserEventService userEventService;
     private final UserService userService;
 

@@ -2,7 +2,6 @@ package com.upao.govench.govench.security;
 
 import com.upao.govench.govench.model.entity.User;
 import com.upao.govench.govench.repository.UserRepository;
-import kotlin.ReplaceWith;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

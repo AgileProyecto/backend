@@ -4,7 +4,6 @@ import com.upao.govench.govench.model.dto.*;
 import com.upao.govench.govench.model.entity.Follow;
 import com.upao.govench.govench.model.entity.User;
 import com.upao.govench.govench.repository.FollowRepository;
-import com.upao.govench.govench.repository.UserEventRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;

@@ -6,29 +6,18 @@ import com.upao.govench.govench.model.entity.Event;
 import com.upao.govench.govench.model.entity.IdCompuestoU_E;
 import com.upao.govench.govench.model.entity.User;
 import com.upao.govench.govench.model.entity.UserEvent;
-import com.upao.govench.govench.repository.UserRepository;
-import com.upao.govench.govench.security.TokenProvider;
 import com.upao.govench.govench.service.UserEventService;
 import com.upao.govench.govench.service.UserService;
 import com.upao.govench.govench.service.impl.EventServiceImpl;
 import com.upao.govench.govench.service.PaypalService;
-import com.upao.govench.govench.service.impl.UserServiceImpl;
-import io.jsonwebtoken.Claims;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.RedirectView;
 import org.webjars.NotFoundException;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 @RestController
 @RequestMapping("/payments")
@@ -36,10 +25,6 @@ import java.time.LocalTime;
 public class PaypalController {
     @Autowired
     public PaypalService paypalService;
-    @Autowired
-    private EventServiceImpl eventServiceImpl;
-    @Autowired
-    private UserEventController userEventController;
     @Autowired
     private UserService userService;
     @Autowired

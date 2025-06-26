@@ -1,13 +1,11 @@
 package com.upao.govench.govench.service.impl;
 
 import com.upao.govench.govench.mapper.CommunityMapper;
-import com.upao.govench.govench.mapper.UserMapper;
 import com.upao.govench.govench.model.dto.CommunityRequestDTO;
 import com.upao.govench.govench.model.dto.CommunityResponseDTO;
 import com.upao.govench.govench.model.entity.Community;
 import com.upao.govench.govench.model.entity.User;
 import com.upao.govench.govench.repository.CommunityRepository;
-import com.upao.govench.govench.repository.PostRepository;
 import com.upao.govench.govench.repository.UserRepository;
 import com.upao.govench.govench.service.CommunityService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +18,7 @@ public class CommunityServiceImpl implements CommunityService {
     @Autowired
     private CommunityRepository communityRepository;
     @Autowired
-    private PostRepository postRepository;
-    @Autowired
     private CommunityMapper communityMapper;
-    @Autowired
-    private UserMapper userMapper;
     @Autowired
     private UserRepository userRepository;
     @Override

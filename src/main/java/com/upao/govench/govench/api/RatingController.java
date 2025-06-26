@@ -2,8 +2,6 @@ package com.upao.govench.govench.api;
 
 import com.upao.govench.govench.exceptions.ResourceNotFoundException;
 import com.upao.govench.govench.model.dto.RatingDTO;
-import com.upao.govench.govench.model.entity.Event;
-import com.upao.govench.govench.service.EventService;
 import com.upao.govench.govench.service.RatingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,15 +23,9 @@ public class RatingController {
     @Autowired
     private RatingService ratingService;
 
-    @Autowired
-    private EventService eventService;
-
     @GetMapping("/event/{eventId}")
     public ResponseEntity<Object> getRatingsByEvent(@PathVariable int eventId) {
         try {
-            // Verificar si el evento existe, esto lanzará una excepción si no lo encuentra
-            Event event = eventService.getEventById(eventId);
-
             // Obtener las calificaciones del evento
             List<RatingDTO> ratings = ratingService.getRatingsByEventId(eventId);
             if (ratings.isEmpty()) {
@@ -47,8 +39,5 @@ public class RatingController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
         }
     }
-
-
-
 
 }
