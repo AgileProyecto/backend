@@ -7,7 +7,6 @@ import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.element.*;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.properties.TextAlignment;
-import com.upao.govench.govench.model.dto.ReportResponseDTO;
 import com.upao.govench.govench.service.impl.GraphServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,17 +17,13 @@ import java.util.List;
 
 @Service
 public class PDFService {
+
     @Autowired
     private GraphServiceImpl graphServiceImpl;
-    @Autowired
-    private ReportService reportService;
 
     public ByteArrayInputStream generateUserReportPdf(int userId) {
-
-        ReportResponseDTO reportResponseDTO = reportService.generateReport(userId);
         ByteArrayOutputStream out = new ByteArrayOutputStream();
-
-        boolean hasValidData = false; // Bandera para validar si hay al menos un grafico
+        boolean hasValidData = false; // Bandera para validar si hay al menos un gráfico
 
         try {
             PdfWriter writer = new PdfWriter(out);
@@ -87,7 +82,9 @@ public class PDFService {
 
             document.close();
 
-            if (!hasValidData) { return null; }
+            if (!hasValidData) {
+                return null;
+            }
         } catch (Exception e) {
             throw new RuntimeException("Error al generar el PDF", e);
         }

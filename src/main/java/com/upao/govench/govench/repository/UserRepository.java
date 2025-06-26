@@ -1,6 +1,5 @@
 package com.upao.govench.govench.repository;
 
-import com.upao.govench.govench.model.dto.UserBasicDTO;
 import com.upao.govench.govench.model.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

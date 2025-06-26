@@ -6,7 +6,6 @@ import com.upao.govench.govench.model.entity.*;
 import com.upao.govench.govench.service.RegisterConfirmation;
 import jakarta.mail.MessagingException;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

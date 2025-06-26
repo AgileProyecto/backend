@@ -3,12 +3,8 @@ package com.upao.govench.govench.mapper;
 import com.upao.govench.govench.model.dto.*;
 import com.upao.govench.govench.model.entity.Event;
 import com.upao.govench.govench.model.entity.Location;
-import com.upao.govench.govench.model.entity.Rating;
 import com.upao.govench.govench.model.entity.User;
 import com.upao.govench.govench.repository.LocationRepository;
-import com.upao.govench.govench.repository.UserRepository;
-import com.upao.govench.govench.service.EventService;
-import com.upao.govench.govench.service.LocationService;
 import com.upao.govench.govench.service.UserService;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
@@ -22,7 +18,6 @@ public class EventMapper {
 
     private final ModelMapper modelMapper;
     private final LocationRepository locationRepository;
-    private final LocationService locationService;
     private final UserService userService;
     private final LocationMapper locationMapper;
 

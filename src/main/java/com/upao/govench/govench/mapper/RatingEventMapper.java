@@ -4,14 +4,11 @@ import com.upao.govench.govench.model.dto.RatingEventRequestDTO;
 import com.upao.govench.govench.model.dto.RatingEventResponseDTO;
 import com.upao.govench.govench.model.entity.RatingEvent;
 import com.upao.govench.govench.model.entity.User;
-import com.upao.govench.govench.repository.UserRepository;
-import com.upao.govench.govench.service.UserService;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.Optional;
 
 @Component
 @AllArgsConstructor

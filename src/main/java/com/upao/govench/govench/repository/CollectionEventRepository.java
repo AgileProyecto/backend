@@ -1,6 +1,5 @@
 package com.upao.govench.govench.repository;
 
-import com.upao.govench.govench.model.dto.EventResponseDTO;
 import com.upao.govench.govench.model.entity.Collection;
 import com.upao.govench.govench.model.entity.CollectionEvent;
 import com.upao.govench.govench.model.entity.CollectionEventPK;

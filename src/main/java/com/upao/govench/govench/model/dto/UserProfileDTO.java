@@ -4,7 +4,6 @@ import com.upao.govench.govench.model.entity.Role;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @Data

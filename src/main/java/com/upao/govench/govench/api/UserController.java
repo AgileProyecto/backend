@@ -9,31 +9,22 @@ import com.upao.govench.govench.repository.EventRepository;
 import com.upao.govench.govench.repository.RatingEventRepository;
 import com.upao.govench.govench.repository.UserRepository;
 import com.upao.govench.govench.security.TokenProvider;
-import com.upao.govench.govench.security.UserPrincipal;
 import com.upao.govench.govench.service.ProfileService;
 import com.upao.govench.govench.service.UserService;
-import com.upao.govench.govench.security.TokenProvider;
 import io.jsonwebtoken.Claims;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.mapping.TableOwner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.token.TokenService;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.webjars.NotFoundException;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @RestController

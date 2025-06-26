@@ -1,11 +1,9 @@
 package com.upao.govench.govench.mapper;
 
-import com.upao.govench.govench.model.dto.RatingDTO;
 import com.upao.govench.govench.model.dto.RatingRequestDTO;
 import com.upao.govench.govench.model.dto.RatingResponseDTO;
 import com.upao.govench.govench.model.entity.Rating;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 

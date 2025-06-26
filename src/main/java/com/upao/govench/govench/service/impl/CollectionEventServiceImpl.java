@@ -1,24 +1,15 @@
 package com.upao.govench.govench.service.impl;
 
 import com.upao.govench.govench.exceptions.ResourceNotFoundException;
-import com.upao.govench.govench.model.dto.EventResponseDTO;
 import com.upao.govench.govench.model.entity.Collection;
 import com.upao.govench.govench.model.entity.CollectionEvent;
 import com.upao.govench.govench.model.entity.Event;
-import com.upao.govench.govench.model.entity.User;
 import com.upao.govench.govench.repository.CollectionEventRepository;
 import com.upao.govench.govench.repository.CollectionRepository;
 import com.upao.govench.govench.repository.EventRepository;
-import com.upao.govench.govench.repository.UserRepository;
-import com.upao.govench.govench.security.TokenProvider;
 import com.upao.govench.govench.service.CollectionEventService;
-import com.upao.govench.govench.service.EventService;
 import com.upao.govench.govench.service.UserService;
-import io.jsonwebtoken.Claims;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

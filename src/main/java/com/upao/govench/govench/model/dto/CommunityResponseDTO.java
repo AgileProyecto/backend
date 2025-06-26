@@ -1,7 +1,5 @@
 package com.upao.govench.govench.model.dto;
 
-import com.upao.govench.govench.model.entity.Post;
-import com.upao.govench.govench.model.entity.User;
 import lombok.Data;
 
 import java.util.ArrayList;

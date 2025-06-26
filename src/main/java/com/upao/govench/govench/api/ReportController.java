@@ -4,10 +4,7 @@ import com.upao.govench.govench.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.*;
-import com.upao.govench.govench.model.dto.ReportResponseDTO;
-import com.upao.govench.govench.service.ReportService;
 import com.upao.govench.govench.service.PDFService;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.ByteArrayInputStream;
