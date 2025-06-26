@@ -1,9 +1,12 @@
+# Etapa 1: Construcción del JAR
+FROM maven:3.9.6-eclipse-temurin-21 AS build
+WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
+
+# Etapa 2: Imagen para ejecución
 FROM openjdk:21-jdk-slim
-
-ARG JAR_FILE=target/govench-api-0.0.1.jar
-
-COPY ${JAR_FILE} govench-api.jar
-
+WORKDIR /app
+COPY --from=build /app/target/*.jar govench-api.jar
 EXPOSE 8080
-
 ENTRYPOINT ["java","-jar","govench-api.jar"]
